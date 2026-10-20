@@ -5,9 +5,12 @@ import { useMemo, useState } from "react";
 import type { ICard } from "@/models";
 import { Icon } from "@/components/common";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./card.module.scss";
 
 export const Card = (props: { card: ICard; stack: boolean }) => {
+  const { t } = useLocale();
   const [isTransformed, setIsTransformed] = useState(props.card.isTransformed);
 
   const imageUrl = `https://s3-us-west-2.amazonaws.com/mtgprimer/cards/normal/${props.card.code}/${props.card.number}.jpg`;
@@ -46,12 +49,12 @@ export const Card = (props: { card: ICard; stack: boolean }) => {
           className="expandButton"
           title={`${props.card.number}: ${props.card.name}`}
         >
-          <span className="screen-reader-text">Expand</span>
+          <span className="screen-reader-text">{t("Expand")}</span>
         </button>
         {isTransformable && (
           <button
             className={`transformButton`}
-            title="Transform Card"
+            title={t("Transform Card")}
             onClick={() => setIsTransformed(!isTransformed)}
           >
             <span className={`icon${isTransformed ? " isTransformed" : ""}`}>
@@ -59,7 +62,7 @@ export const Card = (props: { card: ICard; stack: boolean }) => {
                 <Icon slug="fas fa-sync-alt" />
               </span>
             </span>
-            <span className="screen-reader-text">Transform Card</span>
+            <span className="screen-reader-text">{t("Transform Card")}</span>
           </button>
         )}
       </div>

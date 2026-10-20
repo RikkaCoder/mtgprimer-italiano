@@ -5,10 +5,13 @@ import { useCallback, useEffect, useMemo, useRef } from "react";
 import type { IGuide } from "@/models";
 import { Card, CardText, Icon } from "@/components/common";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./card-groups.module.scss";
 import { useFilters, useGroups } from "@/components/provider/FiltersProvider";
 
 export const CardGroups = (props: { guide: IGuide }) => {
+  const { t } = useLocale();
   const { filterSelections, filter } = useFilters();
   const { groups } = useGroups(props.guide.cards);
   const refs = useRef<Record<string, HTMLLIElement>>({});
@@ -131,11 +134,11 @@ export const CardGroups = (props: { guide: IGuide }) => {
               ))}
             </ul>
           ) : (
-            <h4>No cards fit those filters!</h4>
+            <h4>{t("No cards fit those filters!")}</h4>
           )}
         </>
       ) : (
-        <h4>This guide contains no cards!</h4>
+        <h4>{t("This guide contains no cards!")}</h4>
       )}
     </section>
   );

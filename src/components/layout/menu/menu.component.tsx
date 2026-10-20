@@ -11,11 +11,14 @@ import type {
 import { Icon, Logo } from "@/components/common";
 import { useLocalToggle } from "@/hooks";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./menu.module.scss";
 
 export const Menu = (props: {
   template: ITemplateInfo | ITemplateGuide | ITemplateGuideGroup;
 }) => {
+  const { t } = useLocale();
   const pathname = usePathname();
   const [isMenuCollapsed, toggleIsMenuCollapsed] = useLocalToggle(
     "MENU_COLLAPSED",
@@ -26,10 +29,10 @@ export const Menu = (props: {
     <aside className={styles.menu}>
       <button
         className={styles.collapser}
-        title="Collapse Menu"
+        title={t("Collapse Menu")}
         onClick={() => toggleIsMenuCollapsed()}
       >
-        <span className="screen-reader-text">Toggle Menu Collapse</span>
+        <span className="screen-reader-text">{t("Toggle Menu Collapse")}</span>
         {isMenuCollapsed ? (
           <Icon slug="fas fa-arrow-right" />
         ) : (
@@ -72,7 +75,7 @@ export const Menu = (props: {
                       slugSecondary="c"
                     />
                   </span>
-                  <p>Format Information</p>
+                  <p>{t("Format Information")}</p>
                 </Link>
               </li>
               {props.template?.menu?.pages &&
@@ -101,12 +104,12 @@ export const Menu = (props: {
       <Link
         className={styles.directory}
         href="/directory"
-        title="Format Directory"
+        title={t("Format Directory")}
       >
         <span>
           <Icon slug="fas fa-compass" />
         </span>
-        <p>Format Directory</p>
+        <p>{t("Format Directory")}</p>
       </Link>
     </aside>
   );

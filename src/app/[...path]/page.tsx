@@ -1,15 +1,5 @@
 import { TemplateRouter } from "@/components/template";
 import { getPage, getPaths } from "@/lib";
-import { createMetadata } from "../metadata";
-
-export const generateMetadata = async ({
-  params,
-}: {
-  params: Promise<{ path: string[] }>;
-}) => {
-  const template = await getPage((await params).path);
-  return createMetadata(template);
-};
 
 export const generateStaticParams = async () => {
   return await getPaths();

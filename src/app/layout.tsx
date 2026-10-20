@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { LocaleProvider } from "@/components/provider/LocaleProvider";
 
 import "./globals.scss";
 
@@ -19,7 +20,6 @@ export const metadata: Metadata = {
   applicationName: "MTG Primer",
   openGraph: {
     type: "website",
-    locale: "en_US",
     url: "https://mtgprimer.com",
     siteName: "MTG Primer",
   },
@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
       <head>
         <meta httpEquiv="cache-control" content="max-age=0" />
         <meta httpEquiv="cache-control" content="no-cache" />
@@ -53,7 +53,9 @@ export default function RootLayout({
         <meta httpEquiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta httpEquiv="pragma" content="no-cache" />
       </head>
-      <body>{children}</body>
+      <body>
+        <LocaleProvider>{children}</LocaleProvider>
+      </body>
       <GoogleAnalytics gaId="UA-61176008-6" />
     </html>
   );

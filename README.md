@@ -1,5 +1,10 @@
 # MTG Primer
 
+Localizzazione **MTG Primer Italiano**, basata sul progetto originale di Garrett
+Gardner. Italiano predefinito e selettore Italiano/English; dati e identificatori
+delle carte originali conservati. Architettura, modifiche e comandi di verifica
+sono documentati in [docs/LOCALIZZAZIONE.md](docs/LOCALIZZAZIONE.md).
+
 Magic: The Gathering limited guide website. Built with Typescript, React, and NextJS. Live on [mtgprimer.com](https://mtgprimer.com).
 
 ## **Author**

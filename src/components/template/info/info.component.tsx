@@ -1,10 +1,15 @@
+"use client";
+
 import { Button } from "@/components/common";
 import { PageHeader, TableOfContents } from "@/components/layout";
 import type { ITemplateInfo } from "@/models";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./info.module.scss";
 
 export const TemplateInfo = (props: { template: ITemplateInfo }) => {
+  const { t } = useLocale();
   return (
     <section className={styles.info}>
       <PageHeader
@@ -14,7 +19,7 @@ export const TemplateInfo = (props: { template: ITemplateInfo }) => {
         icon={props.template.icon}
       />
       <div className="content">
-        <h2>Table of Contents</h2>
+        <h2>{t("Table of Contents")}</h2>
         <ul>
           {props.template.guidePages?.map((page, key) => (
             <li key={key}>
@@ -30,7 +35,7 @@ export const TemplateInfo = (props: { template: ITemplateInfo }) => {
         {props.template.mtgScribePlayBooster && (
           <div>
             <Button href={props.template.mtgScribePlayBooster} size="md" newTab>
-              MTGScribe Play Booster Fact Sheet
+              {t("MTGScribe Play Booster Fact Sheet")}
             </Button>
           </div>
         )}

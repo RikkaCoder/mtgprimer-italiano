@@ -12,6 +12,7 @@ import type {
 } from "@/models";
 import { DEFAULT_FILTER_OPTIONS, DEFAULT_FILTER_SELECTIONS } from "@/constants";
 import { PRESET } from "@/content/global";
+import { createPageTitle } from "./title";
 
 export const generatePages = async (pageConfig: TPageConfig) => {
   const _guideConfigsMemo: Record<string, IGuideConfig> = {};
@@ -55,9 +56,7 @@ export const generatePages = async (pageConfig: TPageConfig) => {
       pageConfig.description ?? preset?.DESCRIPTION ?? "Page was not found.";
     const icon = pageConfig.icon ?? preset?.ICON ?? parentTemplate?.icon ?? "";
 
-    const titleFull = `${title ? `${title} | ` : ""}MTG Primer${
-      title ? "" : ` | Strategy Guides for Limited Magic: The Gathering`
-    }`;
+    const titleFull = createPageTitle({ title });
 
     const template: Partial<TTemplate> = {
       path,
@@ -95,7 +94,7 @@ export const generatePages = async (pageConfig: TPageConfig) => {
         const formatName = guideGalleryData.guide.formatName;
         template.formatName = formatName;
         template.formatCode = formatCode;
-        template.titleFull = `${formatName}: ${titleFull}`;
+        template.titleFull = createPageTitle({ title, formatName });
         template.description = description.replaceAll(
           "%formatName",
           formatName,

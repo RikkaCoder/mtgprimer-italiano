@@ -1,6 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+/.npm-cache/
+/.playwright/
+/test-results/
+/playwright-report/
 /node_modules
 /.pnp
 .pnp.*
