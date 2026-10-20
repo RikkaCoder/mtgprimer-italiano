@@ -1,0 +1,24 @@
+{
+  "object": "card",
+  "id": "7198be16-ca85-484c-b6dd-3da2fe5a2f06",
+  "set": "mid",
+  "collector_number": "27",
+  "lang": "it",
+  "name": "Lunarch Veteran // Luminous Phantom",
+  "layout": "transform",
+  "image_status": "lowres",
+  "card_faces": [
+    {
+      "name": "Lunarch Veteran",
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/7/1/7198be16-ca85-484c-b6dd-3da2fe5a2f06.jpg?1782872867"
+      }
+    },
+    {
+      "name": "Luminous Phantom",
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/back/7/1/7198be16-ca85-484c-b6dd-3da2fe5a2f06.jpg?1782872867"
+      }
+    }
+  ]
+}

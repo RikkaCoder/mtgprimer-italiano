@@ -1,0 +1,485 @@
+{
+  "schemaVersion": 1,
+  "scope": "fra/instants",
+  "generatedAt": "2026-10-20T14:58:46.547Z",
+  "cards": {
+    "fra/2": {
+      "id": "2f21ba34-403a-4273-962a-a14bdfce91d3",
+      "set": "fra",
+      "collectorNumber": "2",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/2/f/2f21ba34-403a-4273-962a-a14bdfce91d3.jpg?1790680796"
+    },
+    "fra/49": {
+      "id": "5abc7a02-af87-4ccb-8f8c-1293d25dc9d3",
+      "set": "fra",
+      "collectorNumber": "49",
+      "language": "it",
+      "layout": "prepare",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/5/a/5abc7a02-af87-4ccb-8f8c-1293d25dc9d3.jpg?1790682335"
+    },
+    "fra/75": {
+      "id": "6fb69a27-6599-469a-a96a-e06d6856b8e3",
+      "set": "fra",
+      "collectorNumber": "75",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/6/f/6fb69a27-6599-469a-a96a-e06d6856b8e3.jpg?1790683045"
+    },
+    "fra/50": {
+      "id": "8d86c394-a1a4-49eb-9745-85ec82ea36bb",
+      "set": "fra",
+      "collectorNumber": "50",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/8/d/8d86c394-a1a4-49eb-9745-85ec82ea36bb.jpg?1790682360"
+    },
+    "fra/125": {
+      "id": "9d4ea8bf-1e99-4ebe-a41e-01774caa41c9",
+      "set": "fra",
+      "collectorNumber": "125",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/9/d/9d4ea8bf-1e99-4ebe-a41e-01774caa41c9.jpg?1790684538"
+    },
+    "fra/126": {
+      "id": "8eab0bfe-75e5-4729-99f2-4484411e41b5",
+      "set": "fra",
+      "collectorNumber": "126",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/8/e/8eab0bfe-75e5-4729-99f2-4484411e41b5.jpg?1790684566"
+    },
+    "fra/101": {
+      "id": "d9833c17-c173-47d4-9103-03274c27bfc4",
+      "set": "fra",
+      "collectorNumber": "101",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/d/9/d9833c17-c173-47d4-9103-03274c27bfc4.jpg?1790683806"
+    },
+    "fra/25": {
+      "id": "6f2aceb1-7ddb-40b4-ad84-22f8b051c069",
+      "set": "fra",
+      "collectorNumber": "25",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/6/f/6f2aceb1-7ddb-40b4-ad84-22f8b051c069.jpg?1790681592"
+    },
+    "fra/128": {
+      "id": "6c9e85c6-4781-4c81-adc4-526f4bdf731f",
+      "set": "fra",
+      "collectorNumber": "128",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/6/c/6c9e85c6-4781-4c81-adc4-526f4bdf731f.jpg?1790684617"
+    },
+    "fra/29": {
+      "id": "fe0081e4-376a-40a5-a1c5-e734d8b9934d",
+      "set": "fra",
+      "collectorNumber": "29",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/f/e/fe0081e4-376a-40a5-a1c5-e734d8b9934d.jpg?1790681730"
+    },
+    "fra/257": {
+      "id": "9e5ced3c-8fa4-449b-9232-69aecaf106d3",
+      "set": "fra",
+      "collectorNumber": "257",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/9/e/9e5ced3c-8fa4-449b-9232-69aecaf106d3.jpg?1790688213"
+    },
+    "fra/82": {
+      "id": "4e83c377-ed67-4b91-9e02-373cb902d9b7",
+      "set": "fra",
+      "collectorNumber": "82",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/4/e/4e83c377-ed67-4b91-9e02-373cb902d9b7.jpg?1790683281"
+    },
+    "fra/54": {
+      "id": "3f53c16f-4493-4747-addd-518a33dcbd11",
+      "set": "fra",
+      "collectorNumber": "54",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/3/f/3f53c16f-4493-4747-addd-518a33dcbd11.jpg?1790682462"
+    },
+    "fra/132": {
+      "id": "1dd9dcb8-9eca-4821-8c03-781b63441afc",
+      "set": "fra",
+      "collectorNumber": "132",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/1/d/1dd9dcb8-9eca-4821-8c03-781b63441afc.jpg?1790684719"
+    },
+    "fra/134": {
+      "id": "802a6352-93bb-4120-930e-93fb62e9c2ce",
+      "set": "fra",
+      "collectorNumber": "134",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/8/0/802a6352-93bb-4120-930e-93fb62e9c2ce.jpg?1790684773"
+    },
+    "fra/102": {
+      "id": "26e9a8a2-25e1-4d6f-8adc-6d5202ae6641",
+      "set": "fra",
+      "collectorNumber": "102",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/2/6/26e9a8a2-25e1-4d6f-8adc-6d5202ae6641.jpg?1790683839"
+    },
+    "fra/84": {
+      "id": "83e07365-cdd3-412a-8ada-03f9c42e0394",
+      "set": "fra",
+      "collectorNumber": "84",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/8/3/83e07365-cdd3-412a-8ada-03f9c42e0394.jpg?1790683351"
+    },
+    "fra/9": {
+      "id": "fe969564-10a9-4300-8fea-ef2fbca51887",
+      "set": "fra",
+      "collectorNumber": "9",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/f/e/fe969564-10a9-4300-8fea-ef2fbca51887.jpg?1790681037"
+    },
+    "fra/198": {
+      "id": "ecfe3b98-814e-4b2f-8002-bf1a69f4a6d2",
+      "set": "fra",
+      "collectorNumber": "198",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/e/c/ecfe3b98-814e-4b2f-8002-bf1a69f4a6d2.jpg?1790686537"
+    },
+    "fra/30": {
+      "id": "24463821-c2b2-4431-a85b-eb888a312ba0",
+      "set": "fra",
+      "collectorNumber": "30",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/2/4/24463821-c2b2-4431-a85b-eb888a312ba0.jpg?1790681761"
+    },
+    "fra/32": {
+      "id": "dfcb5fa6-7640-46be-90ea-5d61344cfa18",
+      "set": "fra",
+      "collectorNumber": "32",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/d/f/dfcb5fa6-7640-46be-90ea-5d61344cfa18.jpg?1790681821"
+    },
+    "fra/138": {
+      "id": "62e0e41a-14aa-4720-8176-bb10ec26177d",
+      "set": "fra",
+      "collectorNumber": "138",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/6/2/62e0e41a-14aa-4720-8176-bb10ec26177d.jpg?1790684878"
+    },
+    "fra/56": {
+      "id": "d769f441-2305-4e6b-a734-d2d00ae253fa",
+      "set": "fra",
+      "collectorNumber": "56",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/d/7/d769f441-2305-4e6b-a734-d2d00ae253fa.jpg?1790682514"
+    },
+    "fra/14": {
+      "id": "3e2e6549-ee1f-4ac2-96e5-f830ed258ae3",
+      "set": "fra",
+      "collectorNumber": "14",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/3/e/3e2e6549-ee1f-4ac2-96e5-f830ed258ae3.jpg?1790681208"
+    },
+    "fra/91": {
+      "id": "177c16d7-9632-4ba8-9a6a-9823f1008755",
+      "set": "fra",
+      "collectorNumber": "91",
+      "language": "it",
+      "layout": "prepare",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/1/7/177c16d7-9632-4ba8-9a6a-9823f1008755.jpg?1790683547"
+    },
+    "fra/58": {
+      "id": "10c71e4a-1b4f-406d-ae75-ebe13770cfc5",
+      "set": "fra",
+      "collectorNumber": "58",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/1/0/10c71e4a-1b4f-406d-ae75-ebe13770cfc5.jpg?1790682562"
+    },
+    "fra/34": {
+      "id": "936bd837-5217-4254-981a-4bfa177b6cd1",
+      "set": "fra",
+      "collectorNumber": "34",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/9/3/936bd837-5217-4254-981a-4bfa177b6cd1.jpg?1790681877"
+    },
+    "fra/36": {
+      "id": "8c958d43-7011-49aa-97d4-12b575ea063b",
+      "set": "fra",
+      "collectorNumber": "36",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/8/c/8c958d43-7011-49aa-97d4-12b575ea063b.jpg?1790681938"
+    },
+    "fra/235": {
+      "id": "13258667-fb76-4cf3-acb8-44ca19608e24",
+      "set": "fra",
+      "collectorNumber": "235",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/1/3/13258667-fb76-4cf3-acb8-44ca19608e24.jpg?1790687610"
+    },
+    "fra/17": {
+      "id": "776f2ba5-80da-47a3-88b3-ff73a2336044",
+      "set": "fra",
+      "collectorNumber": "17",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/7/7/776f2ba5-80da-47a3-88b3-ff73a2336044.jpg?1790681301"
+    },
+    "fra/112": {
+      "id": "c88d65ce-77f0-4b4d-ba81-18e149bbe6e2",
+      "set": "fra",
+      "collectorNumber": "112",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/c/8/c88d65ce-77f0-4b4d-ba81-18e149bbe6e2.jpg?1790684123"
+    },
+    "fra/63": {
+      "id": "29502636-e344-4dc4-a7f8-8aade5a26ab0",
+      "set": "fra",
+      "collectorNumber": "63",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/2/9/29502636-e344-4dc4-a7f8-8aade5a26ab0.jpg?1790682705"
+    },
+    "fra/114": {
+      "id": "df2ccdec-3ffb-4621-acb3-2c424ed3e574",
+      "set": "fra",
+      "collectorNumber": "114",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/d/f/df2ccdec-3ffb-4621-acb3-2c424ed3e574.jpg?1790684188"
+    },
+    "fra/40": {
+      "id": "5bd03fb7-3b6e-428c-87d5-c6df6d0fc03f",
+      "set": "fra",
+      "collectorNumber": "40",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/5/b/5bd03fb7-3b6e-428c-87d5-c6df6d0fc03f.jpg?1790682082"
+    },
+    "fra/41": {
+      "id": "07e2cfcc-60f5-4f5e-aff1-351bea79bb83",
+      "set": "fra",
+      "collectorNumber": "41",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/0/7/07e2cfcc-60f5-4f5e-aff1-351bea79bb83.jpg?1790682118"
+    },
+    "fra/150": {
+      "id": "18603421-df6e-4bfb-ae0f-40cf7d9f4f32",
+      "set": "fra",
+      "collectorNumber": "150",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/1/8/18603421-df6e-4bfb-ae0f-40cf7d9f4f32.jpg?1790685224"
+    },
+    "fra/115": {
+      "id": "c172a48f-66ca-4ee0-ac91-8a11e59db44d",
+      "set": "fra",
+      "collectorNumber": "115",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/c/1/c172a48f-66ca-4ee0-ac91-8a11e59db44d.jpg?1790684278"
+    },
+    "fra/68": {
+      "id": "73290d6f-41b1-44f7-b372-9c2f18ab4a14",
+      "set": "fra",
+      "collectorNumber": "68",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/7/3/73290d6f-41b1-44f7-b372-9c2f18ab4a14.jpg?1790682840"
+    },
+    "fra/117": {
+      "id": "6b4488c6-602a-4744-81f9-e1c27c354c22",
+      "set": "fra",
+      "collectorNumber": "117",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/6/b/6b4488c6-602a-4744-81f9-e1c27c354c22.jpg?1790684301"
+    },
+    "fra/236": {
+      "id": "5d99831a-cc38-4a98-8477-3b0dece2fe73",
+      "set": "fra",
+      "collectorNumber": "236",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/5/d/5d99831a-cc38-4a98-8477-3b0dece2fe73.jpg?1790687635"
+    },
+    "fra/204": {
+      "id": "0c0d1253-29bc-48de-9a2a-955beebae926",
+      "set": "fra",
+      "collectorNumber": "204",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/0/c/0c0d1253-29bc-48de-9a2a-955beebae926.jpg?1790686699"
+    },
+    "fra/44": {
+      "id": "ca80dc10-2dcd-4b97-9e78-d0f582a3db7d",
+      "set": "fra",
+      "collectorNumber": "44",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/c/a/ca80dc10-2dcd-4b97-9e78-d0f582a3db7d.jpg?1790682205"
+    },
+    "fra/155": {
+      "id": "f617e7ec-76c3-48a3-bcfe-dfd2f9288c18",
+      "set": "fra",
+      "collectorNumber": "155",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/f/6/f617e7ec-76c3-48a3-bcfe-dfd2f9288c18.jpg?1790685360"
+    },
+    "fra/157": {
+      "id": "3894ff17-a116-4e6d-9f1f-9c36faa1be80",
+      "set": "fra",
+      "collectorNumber": "157",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/3/8/3894ff17-a116-4e6d-9f1f-9c36faa1be80.jpg?1790685414"
+    },
+    "fra/46": {
+      "id": "779c535d-11cc-4b0e-8309-884b3fe11425",
+      "set": "fra",
+      "collectorNumber": "46",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/7/7/779c535d-11cc-4b0e-8309-884b3fe11425.jpg?1790682259"
+    },
+    "fra/160": {
+      "id": "d61e1ddc-53df-4fcb-847e-d047518bfbb7",
+      "set": "fra",
+      "collectorNumber": "160",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/d/6/d61e1ddc-53df-4fcb-847e-d047518bfbb7.jpg?1790685496"
+    },
+    "fra/162": {
+      "id": "fd2d9f41-1eb0-4741-b7d3-a0e6d4e75d55",
+      "set": "fra",
+      "collectorNumber": "162",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/f/d/fd2d9f41-1eb0-4741-b7d3-a0e6d4e75d55.jpg?1790685548"
+    },
+    "fra/95": {
+      "id": "325cff70-6f4a-4005-8108-e21ab81c291e",
+      "set": "fra",
+      "collectorNumber": "95",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/3/2/325cff70-6f4a-4005-8108-e21ab81c291e.jpg?1790683657"
+    },
+    "fra/96": {
+      "id": "af7d7c0c-3e46-45a4-9385-19b8e306229b",
+      "set": "fra",
+      "collectorNumber": "96",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/a/f/af7d7c0c-3e46-45a4-9385-19b8e306229b.jpg?1790683678"
+    },
+    "fra/24": {
+      "id": "7eb28797-737a-4d46-a30b-01c04f83d472",
+      "set": "fra",
+      "collectorNumber": "24",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/7/e/7eb28797-737a-4d46-a30b-01c04f83d472.jpg?1790681562"
+    },
+    "fra/226": {
+      "id": "75aa555e-03c7-48be-bd85-b3d4a599d990",
+      "set": "fra",
+      "collectorNumber": "226",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/7/5/75aa555e-03c7-48be-bd85-b3d4a599d990.jpg?1790687340"
+    },
+    "spg/164": {
+      "id": "feaa45fa-7ee7-416d-8f91-e1548248b356",
+      "set": "spg",
+      "collectorNumber": "164",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/f/e/feaa45fa-7ee7-416d-8f91-e1548248b356.jpg?1792436054"
+    },
+    "spg/163": {
+      "id": "58b4d78e-7581-48c7-859d-045596bdc4e9",
+      "set": "spg",
+      "collectorNumber": "163",
+      "language": "it",
+      "layout": "normal",
+      "imageStatus": "highres_scan",
+      "front": "https://cards.scryfall.io/normal/front/5/8/58b4d78e-7581-48c7-859d-045596bdc4e9.jpg?1792436032"
+    }
+  },
+  "unavailable": {}
+}

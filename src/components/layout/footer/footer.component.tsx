@@ -1,54 +1,58 @@
+"use client";
+
+import { useLocale } from "@/components/provider/LocaleProvider";
 import { Logo } from "@/components/common";
 
 import styles from "./footer.module.scss";
 
 export const Footer = () => {
+  const { t } = useLocale();
   return (
     <footer className={styles.footer}>
       <div className="logoWrap">
         <Logo />
       </div>
       <p>
-        MTG Primer was created by{" "}
+        {t("MTG Primer was created by")}{" "}
         <a href="https://garrett-gardner.com/" target="_blank">
-          Garrett Gardner
+          {t("Garrett Gardner")}
         </a>
-        . This website is possible thanks to{" "}
+        {t(". This website is possible thanks to")}{" "}
         <a href="https://scryfall.com/" target="_blank">
-          Scryfall
+          {t("Scryfall")}
         </a>
-        ,{" "}
+        {t(",")}{" "}
         <a href="https://17lands.com" target="_blank">
-          17Lands.com
+          {t("17Lands.com")}
         </a>{" "}
-        (under{" "}
+        {t("(under")}{" "}
         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-          Creative Commons Attribution 4.0 Interational License
+          {t("Creative Commons Attribution 4.0 Interational License")}
         </a>
-        ) and Andrew Gioia&lsquo;s{" "}
+        {t(") and Andrew Gioia’s")}{" "}
         <a href="https://github.com/andrewgioia/Keyrune" target="_blank">
-          Keyrune
+          {t("Keyrune")}
         </a>{" "}
-        and{" "}
+        {t("and")}{" "}
         <a href="https://github.com/andrewgioia/mana" target="_blank">
-          Mana
+          {t("Mana")}
         </a>
-        .
+        {t(".")}
       </p>
       <p>
-        Found an error or have some feedback? Email{" "}
+        {t("Found an error or have some feedback? Email")}{" "}
         <a href="mailto:mtgprimer@gmail.com" title="Email" target="_blank">
-          mtgprimer@gmail.com
+          {t("mtgprimer@gmail.com")}
         </a>{" "}
-        anytime! Or, better yet, become a contributor{" "}
+        {t("anytime! Or, better yet, become a contributor")}{" "}
         <a href="https://github.com/GarrettGardner/mtgprimer" target="_blank">
-          on GitHub!
+          {t("on GitHub!")}
         </a>
       </p>
       <p>
-        MTG Primer is unofficial Fan Content permitted under the Fan Content
-        Policy. Not approved/endorsed by Wizards. Portions of the materials used
-        are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+        {t(
+          "MTG Primer is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.",
+        )}
       </p>
     </footer>
   );

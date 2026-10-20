@@ -5,9 +5,12 @@ import Link from "next/link";
 import { Icon, Logo } from "@/components/common";
 import { useLocalToggle } from "@/hooks";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./header.module.scss";
 
 export const Header = () => {
+  const { t } = useLocale();
   const [isMenuMobileOpen, toggleIsMenuMobileOpen] = useLocalToggle(
     "MENU_MOBILE_OPEN",
     "menuMobileOpen",
@@ -16,23 +19,23 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className="logo">
-        <Link href="/" title="MTG Primer">
+        <Link href="/" title={t("MTG Primer")}>
           <Logo />
         </Link>
         <button
           className="toggle"
           onClick={() => toggleIsMenuMobileOpen()}
-          title="Toggle Menu"
+          title={t("Toggle Menu")}
         >
           {isMenuMobileOpen ? (
             <span className="close">
               <Icon slug="fas fa-times" />
-              <span className="screen-reader-text">Close Menu</span>
+              <span className="screen-reader-text">{t("Close Menu")}</span>
             </span>
           ) : (
             <span className="open">
               <Icon slug="fas fa-bars" />
-              <span className="screen-reader-text">Open Menu</span>
+              <span className="screen-reader-text">{t("Open Menu")}</span>
             </span>
           )}
         </button>

@@ -5,10 +5,18 @@ import { useCallback, useEffect, useMemo, useRef } from "react";
 import type { IGuide } from "@/models";
 import { Card, CardText, Icon } from "@/components/common";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+import { cardImageKey } from "@/lib/card-image-key";
+import type { ItalianImageMap } from "@/models/card-images.models";
+
 import styles from "./card-groups.module.scss";
 import { useFilters, useGroups } from "@/components/provider/FiltersProvider";
 
-export const CardGroups = (props: { guide: IGuide }) => {
+export const CardGroups = (props: {
+  guide: IGuide;
+  images?: ItalianImageMap;
+}) => {
+  const { t } = useLocale();
   const { filterSelections, filter } = useFilters();
   const { groups } = useGroups(props.guide.cards);
   const refs = useRef<Record<string, HTMLLIElement>>({});
@@ -115,10 +123,22 @@ export const CardGroups = (props: { guide: IGuide }) => {
                             }}
                           >
                             {filterSelections.view === "text" ? (
-                              <CardText card={card} />
+                              <CardText
+                                card={card}
+                                italianImage={
+                                  props.images?.[
+                                    cardImageKey(card.code, card.number)
+                                  ]
+                                }
+                              />
                             ) : (
                               <Card
                                 card={card}
+                                italianImage={
+                                  props.images?.[
+                                    cardImageKey(card.code, card.number)
+                                  ]
+                                }
                                 stack={filterSelections.view === "stack"}
                               />
                             )}
@@ -131,11 +151,11 @@ export const CardGroups = (props: { guide: IGuide }) => {
               ))}
             </ul>
           ) : (
-            <h4>No cards fit those filters!</h4>
+            <h4>{t("No cards fit those filters!")}</h4>
           )}
         </>
       ) : (
-        <h4>This guide contains no cards!</h4>
+        <h4>{t("This guide contains no cards!")}</h4>
       )}
     </section>
   );

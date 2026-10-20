@@ -1,0 +1,327 @@
+{
+  "fra/2": [
+    {
+      "object": "card",
+      "id": "2f21ba34-403a-4273-962a-a14bdfce91d3",
+      "set": "fra",
+      "collector_number": "2",
+      "lang": "it",
+      "name": "Academic Ascent",
+      "layout": "normal",
+      "image_status": "highres_scan",
+      "oracle_id": "406e853b-713f-4c89-9efb-aca74a11183f",
+      "illustration_id": "d1544143-48e6-4337-b7b7-e23d548b72c3",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/2/f/2f21ba34-403a-4273-962a-a14bdfce91d3.jpg?1790680796"
+      }
+    },
+    {
+      "object": "card",
+      "id": "730d8c28-1e58-4b8e-89e9-445d154d2e83",
+      "set": "fra",
+      "collector_number": "2",
+      "lang": "en",
+      "name": "Academic Ascent",
+      "layout": "normal",
+      "image_status": "highres_scan",
+      "oracle_id": "406e853b-713f-4c89-9efb-aca74a11183f",
+      "illustration_id": "d1544143-48e6-4337-b7b7-e23d548b72c3",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/7/3/730d8c28-1e58-4b8e-89e9-445d154d2e83.jpg?1788878081"
+      }
+    }
+  ],
+  "fra/49": [
+    {
+      "object": "card",
+      "id": "4fcc913e-f736-460a-b24b-022fa2e861b9",
+      "set": "fra",
+      "collector_number": "49",
+      "lang": "en",
+      "name": "Bloodline Recollector // Ancestral Craving",
+      "layout": "prepare",
+      "image_status": "highres_scan",
+      "oracle_id": "c8e9a7e1-28ae-40e3-8715-1bb0aa2057c7",
+      "illustration_id": "8588ee7b-b874-485e-af97-3a1b4229b2c1",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/4/f/4fcc913e-f736-460a-b24b-022fa2e861b9.jpg?1788329264"
+      },
+      "card_faces": [
+        {
+          "name": "Bloodline Recollector",
+          "illustration_id": "8588ee7b-b874-485e-af97-3a1b4229b2c1"
+        },
+        {
+          "name": "Ancestral Craving"
+        }
+      ]
+    },
+    {
+      "object": "card",
+      "id": "5abc7a02-af87-4ccb-8f8c-1293d25dc9d3",
+      "set": "fra",
+      "collector_number": "49",
+      "lang": "it",
+      "name": "Bloodline Recollector // Ancestral Craving",
+      "layout": "prepare",
+      "image_status": "highres_scan",
+      "oracle_id": "c8e9a7e1-28ae-40e3-8715-1bb0aa2057c7",
+      "illustration_id": "8588ee7b-b874-485e-af97-3a1b4229b2c1",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/5/a/5abc7a02-af87-4ccb-8f8c-1293d25dc9d3.jpg?1790682335"
+      },
+      "card_faces": [
+        {
+          "name": "Bloodline Recollector",
+          "illustration_id": "8588ee7b-b874-485e-af97-3a1b4229b2c1"
+        },
+        {
+          "name": "Ancestral Craving"
+        }
+      ]
+    }
+  ],
+  "mid/27": [
+    {
+      "object": "card",
+      "id": "7198be16-ca85-484c-b6dd-3da2fe5a2f06",
+      "set": "mid",
+      "collector_number": "27",
+      "lang": "it",
+      "name": "Lunarch Veteran // Luminous Phantom",
+      "layout": "transform",
+      "image_status": "lowres",
+      "oracle_id": "0761a0e7-d443-4bab-bb15-307c83d4a6a1",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "card_faces": [
+        {
+          "name": "Lunarch Veteran",
+          "illustration_id": "aebb64c7-ba52-48a7-902e-b21b0b2d04a8",
+          "image_uris": {
+            "normal": "https://cards.scryfall.io/normal/front/7/1/7198be16-ca85-484c-b6dd-3da2fe5a2f06.jpg?1782872867"
+          }
+        },
+        {
+          "name": "Luminous Phantom",
+          "illustration_id": "101ab572-41f6-4122-b3a7-40ca14c4b0eb",
+          "image_uris": {
+            "normal": "https://cards.scryfall.io/normal/back/7/1/7198be16-ca85-484c-b6dd-3da2fe5a2f06.jpg?1782872867"
+          }
+        }
+      ]
+    },
+    {
+      "object": "card",
+      "id": "d2704743-2e23-40b9-a367-c73d2db45afc",
+      "set": "mid",
+      "collector_number": "27",
+      "lang": "en",
+      "name": "Lunarch Veteran // Luminous Phantom",
+      "layout": "transform",
+      "image_status": "highres_scan",
+      "oracle_id": "0761a0e7-d443-4bab-bb15-307c83d4a6a1",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "frame_effects": [
+        "sunmoondfc"
+      ],
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "card_faces": [
+        {
+          "name": "Lunarch Veteran",
+          "illustration_id": "aebb64c7-ba52-48a7-902e-b21b0b2d04a8",
+          "image_uris": {
+            "normal": "https://cards.scryfall.io/normal/front/d/2/d2704743-2e23-40b9-a367-c73d2db45afc.jpg?1783925662"
+          }
+        },
+        {
+          "name": "Luminous Phantom",
+          "illustration_id": "101ab572-41f6-4122-b3a7-40ca14c4b0eb",
+          "image_uris": {
+            "normal": "https://cards.scryfall.io/normal/back/d/2/d2704743-2e23-40b9-a367-c73d2db45afc.jpg?1783925662"
+          }
+        }
+      ]
+    }
+  ],
+  "neo/1": [
+    {
+      "object": "card",
+      "id": "8c3c5c49-9479-4264-a169-177d1453c3a0",
+      "set": "neo",
+      "collector_number": "1",
+      "lang": "it",
+      "name": "Ancestral Katana",
+      "layout": "normal",
+      "image_status": "lowres",
+      "oracle_id": "13a9b9fd-20fa-4734-9d95-3ab41ab9c7a0",
+      "illustration_id": "a9661038-f51e-4122-87d0-e6db65c48720",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/8/c/8c3c5c49-9479-4264-a169-177d1453c3a0.jpg?1782863254"
+      }
+    },
+    {
+      "object": "card",
+      "id": "d9b1ed43-ee6c-43a2-ba94-5bf71c63e070",
+      "set": "neo",
+      "collector_number": "1",
+      "lang": "en",
+      "name": "Ancestral Katana",
+      "layout": "normal",
+      "image_status": "highres_scan",
+      "oracle_id": "13a9b9fd-20fa-4734-9d95-3ab41ab9c7a0",
+      "illustration_id": "a9661038-f51e-4122-87d0-e6db65c48720",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": false,
+      "games": [
+        "arena",
+        "mtgo",
+        "paper"
+      ],
+      "finishes": [
+        "foil",
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/d/9/d9b1ed43-ee6c-43a2-ba94-5bf71c63e070.jpg?1783923929"
+      }
+    }
+  ],
+  "hbg/1": [
+    {
+      "object": "card",
+      "id": "51dbd7e4-51f9-4995-8cb1-78ae302cdbbb",
+      "set": "hbg",
+      "collector_number": "1",
+      "lang": "en",
+      "name": "Klement, Novice Acolyte",
+      "layout": "normal",
+      "image_status": "highres_scan",
+      "oracle_id": "0432a120-be1b-496b-b8cd-36f757e09425",
+      "illustration_id": "b79b2727-636e-41b8-9485-39f2c5827cf9",
+      "border_color": "black",
+      "full_art": false,
+      "textless": false,
+      "promo": false,
+      "variation": false,
+      "digital": true,
+      "frame_effects": [
+        "legendary"
+      ],
+      "games": [
+        "arena"
+      ],
+      "finishes": [
+        "nonfoil"
+      ],
+      "image_uris": {
+        "normal": "https://cards.scryfall.io/normal/front/5/1/51dbd7e4-51f9-4995-8cb1-78ae302cdbbb.jpg?1783922190"
+      }
+    }
+  ]
+}

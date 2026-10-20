@@ -1,16 +1,29 @@
+import {
+  DEFAULT_LOCALE,
+  localizeTemplate,
+  translate,
+  type Locale,
+} from "@/i18n/translate";
+
 import { ITemplate } from "@/models";
 
-export const createMetadata = (template?: ITemplate) => {
+export const createMetadata = (
+  template?: ITemplate,
+  locale: Locale = DEFAULT_LOCALE,
+) => {
   if (!template) {
     return {
-      title: "NOT FOUND",
+      title: translate("Not Found", locale),
     };
   }
 
+  template = localizeTemplate(template, locale);
   return {
     title: template.titleFull,
     description: template.description,
-    opengraph: {
+    openGraph: {
+      locale: locale === "it" ? "it_IT" : "en_US",
+      alternateLocale: [locale === "it" ? "en_US" : "it_IT"],
       title: template.titleFull,
       description: template.description,
       images: [

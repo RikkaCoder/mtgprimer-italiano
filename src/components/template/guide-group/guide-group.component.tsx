@@ -10,12 +10,15 @@ import {
 } from "@/components/layout";
 import { CardGroups, Icon } from "@/components/common";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./guide-group.module.scss";
 import { FiltersProvider } from "@/components/provider/FiltersProvider";
 
 export const TemplateGuideGroup = (props: {
   template: ITemplateGuideGroup;
 }) => {
+  const { t } = useLocale();
   return (
     <>
       <PageHeader
@@ -26,7 +29,7 @@ export const TemplateGuideGroup = (props: {
       />
       <JumpSearch guides={props.template.guides} />
       <section className={styles.guideGroupTop}>
-        <h3>Table of Contents</h3>
+        <h3>{t("Table of Contents")}</h3>
         <TableOfContents guides={props.template.guides} />
       </section>
       <FiltersProvider filter={props.template.filter}>
@@ -46,7 +49,7 @@ export const TemplateGuideGroup = (props: {
                 )}
               </span>
             </h3>
-            <CardGroups guide={guide} />
+            <CardGroups guide={guide} images={props.template.italianImages} />
           </div>
         ))}
         <FilterBar hideCategories={true} />

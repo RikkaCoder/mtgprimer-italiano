@@ -1,0 +1,365 @@
+{
+  "total": 20187,
+  "italian": 15122,
+  "fallback": 5065,
+  "scopes": 524,
+  "bySet": {
+    "fra": {
+      "total": 274,
+      "italian": 274
+    },
+    "spg": {
+      "total": 111,
+      "italian": 90
+    },
+    "hob": {
+      "total": 188,
+      "italian": 188
+    },
+    "msh": {
+      "total": 276,
+      "italian": 276
+    },
+    "mar": {
+      "total": 53,
+      "italian": 0
+    },
+    "sos": {
+      "total": 266,
+      "italian": 266
+    },
+    "soa": {
+      "total": 65,
+      "italian": 65
+    },
+    "ecl": {
+      "total": 269,
+      "italian": 267
+    },
+    "tla": {
+      "total": 281,
+      "italian": 281
+    },
+    "tle": {
+      "total": 61,
+      "italian": 40
+    },
+    "eoe": {
+      "total": 261,
+      "italian": 261
+    },
+    "eos": {
+      "total": 45,
+      "italian": 0
+    },
+    "fin": {
+      "total": 294,
+      "italian": 291
+    },
+    "fca": {
+      "total": 64,
+      "italian": 0
+    },
+    "tdm": {
+      "total": 271,
+      "italian": 268
+    },
+    "dft": {
+      "total": 271,
+      "italian": 271
+    },
+    "pio": {
+      "total": 278,
+      "italian": 0
+    },
+    "pio-spe": {
+      "total": 40,
+      "italian": 0
+    },
+    "pio-dev": {
+      "total": 40,
+      "italian": 0
+    },
+    "pio-pla": {
+      "total": 40,
+      "italian": 0
+    },
+    "fdn": {
+      "total": 271,
+      "italian": 271
+    },
+    "dsk": {
+      "total": 271,
+      "italian": 270
+    },
+    "blb": {
+      "total": 261,
+      "italian": 261
+    },
+    "mh3": {
+      "total": 304,
+      "italian": 298
+    },
+    "otj": {
+      "total": 271,
+      "italian": 271
+    },
+    "otp": {
+      "total": 65,
+      "italian": 64
+    },
+    "big": {
+      "total": 30,
+      "italian": 30
+    },
+    "mkm": {
+      "total": 272,
+      "italian": 270
+    },
+    "lci": {
+      "total": 287,
+      "italian": 283
+    },
+    "woe": {
+      "total": 261,
+      "italian": 261
+    },
+    "wot": {
+      "total": 63,
+      "italian": 0
+    },
+    "ltr": {
+      "total": 261,
+      "italian": 261
+    },
+    "mom": {
+      "total": 276,
+      "italian": 271
+    },
+    "sir": {
+      "total": 277,
+      "italian": 0
+    },
+    "one": {
+      "total": 261,
+      "italian": 261
+    },
+    "bro": {
+      "total": 267,
+      "italian": 260
+    },
+    "brr": {
+      "total": 63,
+      "italian": 63
+    },
+    "dmu": {
+      "total": 261,
+      "italian": 260
+    },
+    "hbg": {
+      "total": 371,
+      "italian": 0
+    },
+    "2x2": {
+      "total": 332,
+      "italian": 0
+    },
+    "snc": {
+      "total": 261,
+      "italian": 261
+    },
+    "neo": {
+      "total": 283,
+      "italian": 259
+    },
+    "dbl": {
+      "total": 532,
+      "italian": 0
+    },
+    "vow": {
+      "total": 268,
+      "italian": 261
+    },
+    "mid": {
+      "total": 268,
+      "italian": 263
+    },
+    "afr": {
+      "total": 262,
+      "italian": 260
+    },
+    "mh2": {
+      "total": 303,
+      "italian": 301
+    },
+    "stx": {
+      "total": 276,
+      "italian": 274
+    },
+    "sta": {
+      "total": 63,
+      "italian": 63
+    },
+    "khm": {
+      "total": 276,
+      "italian": 271
+    },
+    "klr": {
+      "total": 286,
+      "italian": 0
+    },
+    "znr": {
+      "total": 266,
+      "italian": 265
+    },
+    "akr": {
+      "total": 301,
+      "italian": 0
+    },
+    "2xm": {
+      "total": 332,
+      "italian": 0
+    },
+    "m21": {
+      "total": 259,
+      "italian": 259
+    },
+    "iko": {
+      "total": 259,
+      "italian": 249
+    },
+    "thb": {
+      "total": 249,
+      "italian": 236
+    },
+    "eld": {
+      "total": 250,
+      "italian": 249
+    },
+    "m20": {
+      "total": 260,
+      "italian": 260
+    },
+    "war": {
+      "total": 249,
+      "italian": 249
+    },
+    "rna": {
+      "total": 255,
+      "italian": 254
+    },
+    "grn": {
+      "total": 254,
+      "italian": 248
+    },
+    "m19": {
+      "total": 260,
+      "italian": 259
+    },
+    "dom": {
+      "total": 249,
+      "italian": 249
+    },
+    "rix": {
+      "total": 191,
+      "italian": 191
+    },
+    "xln": {
+      "total": 259,
+      "italian": 259
+    },
+    "hou": {
+      "total": 185,
+      "italian": 183
+    },
+    "akh": {
+      "total": 250,
+      "italian": 249
+    },
+    "mm3": {
+      "total": 249,
+      "italian": 0
+    },
+    "aer": {
+      "total": 194,
+      "italian": 194
+    },
+    "kld": {
+      "total": 250,
+      "italian": 249
+    },
+    "cn2": {
+      "total": 221,
+      "italian": 0
+    },
+    "emn": {
+      "total": 206,
+      "italian": 199
+    },
+    "soi": {
+      "total": 283,
+      "italian": 282
+    },
+    "ema": {
+      "total": 249,
+      "italian": 0
+    },
+    "ogw": {
+      "total": 183,
+      "italian": 182
+    },
+    "bfz": {
+      "total": 249,
+      "italian": 249
+    },
+    "ori": {
+      "total": 252,
+      "italian": 252
+    },
+    "mm2": {
+      "total": 249,
+      "italian": 0
+    },
+    "tpr": {
+      "total": 249,
+      "italian": 0
+    },
+    "dtk": {
+      "total": 249,
+      "italian": 249
+    },
+    "frf": {
+      "total": 175,
+      "italian": 175
+    },
+    "ktk": {
+      "total": 249,
+      "italian": 249
+    },
+    "m15": {
+      "total": 250,
+      "italian": 249
+    },
+    "roe": {
+      "total": 228,
+      "italian": 228
+    },
+    "mrd": {
+      "total": 286,
+      "italian": 0
+    },
+    "8ed": {
+      "total": 337,
+      "italian": 0
+    }
+  },
+  "reasons": {
+    "no-italian-printing": 4250,
+    "image-placeholder": 616,
+    "missing-source-id": 22,
+    "unsupported-layout": 12,
+    "image-missing": 3,
+    "printing-mismatch:illustration_id": 3,
+    "printing-mismatch:frame_effects": 159
+  }
+}

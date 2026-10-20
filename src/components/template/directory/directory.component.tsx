@@ -5,9 +5,12 @@ import Link from "next/link";
 import type { ITemplateDirectory } from "@/models";
 import { CircleLink, Logo } from "@/components/common";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./directory.module.scss";
 
 export const TemplateDirectory = (props: { template: ITemplateDirectory }) => {
+  const { t } = useLocale();
   return (
     <section className={styles.directory}>
       <Link href="/">
@@ -15,7 +18,7 @@ export const TemplateDirectory = (props: { template: ITemplateDirectory }) => {
           <Logo />
         </div>
       </Link>
-      <p>Format Directory</p>
+      <p>{t("Format Directory")}</p>
       <ul>
         {props.template.directory.map((format) => (
           <li key={format.formatCode}>

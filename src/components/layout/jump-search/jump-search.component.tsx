@@ -5,9 +5,12 @@ import { KeyboardEvent, MouseEvent, useMemo, useState } from "react";
 import type { IGuide } from "@/models";
 import { Icon } from "@/components/common";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./jump-search.module.scss";
 
 export const JumpSearch = (props: { guides: IGuide[] }) => {
+  const { t } = useLocale();
   const [searchText, setSearchText] = useState("");
 
   const results = useMemo(
@@ -93,7 +96,7 @@ export const JumpSearch = (props: { guides: IGuide[] }) => {
           onChange={(e) => setSearchText(e.target.value)}
           onKeyDown={(e) => handleEnter(e)}
           value={searchText}
-          placeholder="Jump to a guide..."
+          placeholder={t("Jump to a guide...")}
         />
         <button onClick={() => setSearchText("")} tabIndex={-1}>
           <span className="searchIcon">
@@ -102,7 +105,7 @@ export const JumpSearch = (props: { guides: IGuide[] }) => {
           <span className="clearIcon">
             <Icon slug="fas fa-xmark" />
           </span>
-          <span className="screen-reader-text">Search</span>
+          <span className="screen-reader-text">{t("Search")}</span>
         </button>
         {results && (
           <ul className="results">

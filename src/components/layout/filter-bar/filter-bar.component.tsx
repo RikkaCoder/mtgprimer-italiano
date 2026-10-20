@@ -13,10 +13,13 @@ import type {
 import { Icon } from "@/components/common";
 import { useLocalToggle } from "@/hooks";
 
+import { useLocale } from "@/components/provider/LocaleProvider";
+
 import styles from "./filter-bar.module.scss";
 import { useFilters } from "@/components/provider/FiltersProvider";
 
 export const FilterBar = (props: { hideCategories?: boolean }) => {
+  const { t } = useLocale();
   const [isFilterMobileOpen, toggleIsFilterMobileOpen] = useLocalToggle(
     "FILTER_MOBILE_OPEN",
     "isFilterMobileOpen",
@@ -66,12 +69,12 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
           <div className="toggleMobile">
             <button onClick={toggleIsFilterMobileOpen}>
               <Icon slug="fas fa-sliders" />{" "}
-              {isFilterMobileOpen ? "Close" : "Open"} Filters
+              {t(isFilterMobileOpen ? "Close Filters" : "Open Filters")}
             </button>
           </div>
           <div className="title">
             <h3>
-              <Icon slug="fas fa-sliders" /> Filters
+              <Icon slug="fas fa-sliders" /> {t("Filters")}
             </h3>
           </div>
           <div className="col isLeftmost">
@@ -102,7 +105,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                   </div>
                 ))}
             </div>
-            <p>Color</p>
+            <p>{t("Color")}</p>
           </div>
           <div className="col">
             <div className="filter rarities">
@@ -132,7 +135,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                 </div>
               ))}
             </div>
-            <p>Rarity</p>
+            <p>{t("Rarity")}</p>
           </div>
           <div className="col">
             <div className="dropdownTall">
@@ -153,7 +156,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                 </div>
               </div>
             </div>
-            <p>View</p>
+            <p>{t("View")}</p>
           </div>
           <div className="col hasRows">
             <div className="row">
@@ -172,7 +175,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                   {options.groupings[filterSelections.grouping]}
                 </div>
               </div>
-              <p>Grouping</p>
+              <p>{t("Grouping")}</p>
             </div>
             <div className="row">
               <div className="dropdown">
@@ -190,7 +193,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                   {options.orderings[filterSelections.ordering]}
                 </div>
               </div>
-              <p>Ordering</p>
+              <p>{t("Ordering")}</p>
             </div>
           </div>
           {Object.keys(options.sets).length > 1 && (
@@ -217,7 +220,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                   </div>
                 ))}
               </div>
-              <p>Set</p>
+              <p>{t("Set")}</p>
             </div>
           )}
           {!props.hideCategories &&
@@ -243,7 +246,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
                     </div>
                   ))}
                 </div>
-                <p>Category</p>
+                <p>{t("Category")}</p>
               </div>
             )}
           <div className="actions">
@@ -253,7 +256,7 @@ export const FilterBar = (props: { hideCategories?: boolean }) => {
             </button>
             */}
             <button onClick={() => resetFilters()}>
-              <Icon slug="fas fa-arrow-rotate-left" /> Reset
+              <Icon slug="fas fa-arrow-rotate-left" /> {t("Reset")}
             </button>
           </div>
         </div>

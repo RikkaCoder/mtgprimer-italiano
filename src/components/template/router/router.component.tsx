@@ -1,3 +1,10 @@
+"use client";
+
+import { useLocale } from "@/components/provider/LocaleProvider";
+import { localizeTemplate } from "@/i18n/translate";
+import { LanguageSwitch } from "@/components/common/language-switch/language-switch.component";
+import { PageMetadata } from "@/components/layout/page-metadata/page-metadata.component";
+
 import type { TTemplate } from "@/models";
 import { Background, Footer, Header, Mask, Menu } from "@/components/layout";
 import {
@@ -12,7 +19,17 @@ import {
 import styles from "./router.module.scss";
 import { useMemo } from "react";
 
-export const TemplateRouter = (props: { template: TTemplate }) => {
+export const TemplateRouter = ({
+  template: original,
+}: {
+  template: TTemplate;
+}) => {
+  const { locale } = useLocale();
+  const localized = useMemo(
+    () => localizeTemplate(original, locale),
+    [original, locale],
+  );
+  const props = { template: localized };
   const hasMenu = "menu" in props.template;
   const template = useMemo(() => {
     let template = <TemplateNotFound />;
@@ -38,6 +55,7 @@ export const TemplateRouter = (props: { template: TTemplate }) => {
 
   return (
     <div className={styles.site}>
+      <PageMetadata template={original} locale={locale} />
       {"menu" in props.template && (
         <>
           <Header />
@@ -50,6 +68,7 @@ export const TemplateRouter = (props: { template: TTemplate }) => {
           backgroundImage={props.template.backgroundImage}
           fullWidth={!hasMenu}
         />
+        <LanguageSwitch />
         <main role="contentinfo">{template}</main>
         <Footer />
         <Mask />

@@ -1,5 +1,16 @@
 # MTG Primer
 
+Localizzazione **MTG Primer Italiano**, basata sul progetto originale di Garrett
+Gardner. Italiano predefinito e selettore Italiano/English; dati e identificatori
+delle carte originali conservati. Architettura, modifiche e comandi di verifica
+sono documentati in [docs/LOCALIZZAZIONE.md](docs/LOCALIZZAZIONE.md).
+
+Immagini italiane Scryfall in tutte le guide, con fallback inglese:
+[ambito e verifiche](docs/IMMAGINI-ITALIANE.md).
+
+[Generazione automatica e istruzioni operative](docs/AUTOMAZIONE-IMMAGINI.md)
+per nuove espansioni, cache incrementale, report e PR tramite GitHub Actions.
+
 Magic: The Gathering limited guide website. Built with Typescript, React, and NextJS. Live on [mtgprimer.com](https://mtgprimer.com).
 
 ## **Author**
