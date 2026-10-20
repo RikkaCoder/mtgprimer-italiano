@@ -11,6 +11,9 @@ Immagini italiane Scryfall in tutte le guide, con fallback inglese:
 [Generazione automatica e istruzioni operative](docs/AUTOMAZIONE-IMMAGINI.md)
 per nuove espansioni, cache incrementale, report e PR tramite GitHub Actions.
 
+[Pubblicazione gratuita su GitHub Pages](docs/PUBBLICAZIONE-GITHUB-PAGES.md):
+procedura, validazione e compatibilità dei percorsi.
+
 Magic: The Gathering limited guide website. Built with Typescript, React, and NextJS. Live on [mtgprimer.com](https://mtgprimer.com).
 
 ## **Author**
