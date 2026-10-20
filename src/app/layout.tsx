@@ -4,6 +4,13 @@ import { LocaleProvider } from "@/components/provider/LocaleProvider";
 
 import "./globals.scss";
 
+// Do not attribute visits to the fork to the original author's analytics account.
+const isGitHubPagesBuild = process.env.GITHUB_PAGES === "true";
+const siteBasePath = isGitHubPagesBuild ? "/mtgprimer-italiano" : "";
+const siteUrl = isGitHubPagesBuild
+  ? "https://rikkacoder.github.io/mtgprimer-italiano/"
+  : "https://mtgprimer.com";
+
 export const metadata: Metadata = {
   authors: [
     {
@@ -20,18 +27,18 @@ export const metadata: Metadata = {
   applicationName: "MTG Primer",
   openGraph: {
     type: "website",
-    url: "https://mtgprimer.com",
+    url: siteUrl,
     siteName: "MTG Primer",
   },
   twitter: {
     card: "summary_large_image",
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }],
+    icon: [{ url: `${siteBasePath}/favicon.ico` }],
     apple: [],
-    shortcut: ["/favicon.ico"],
+    shortcut: [`${siteBasePath}/favicon.ico`],
   },
-  metadataBase: new URL("https://mtgprimer.com"),
+  metadataBase: new URL(siteUrl),
 };
 
 export const viewport: Viewport = {
@@ -56,7 +63,7 @@ export default function RootLayout({
       <body>
         <LocaleProvider>{children}</LocaleProvider>
       </body>
-      <GoogleAnalytics gaId="UA-61176008-6" />
+      {!isGitHubPagesBuild && <GoogleAnalytics gaId="UA-61176008-6" />}
     </html>
   );
 }
