@@ -14,8 +14,27 @@ import { DEFAULT_FILTER_OPTIONS, DEFAULT_FILTER_SELECTIONS } from "@/constants";
 import { PRESET } from "@/content/global";
 import { createPageTitle } from "./title";
 
-export const generatePages = async (pageConfig: TPageConfig) => {
+export interface GuideCardSource {
+  card: ICard;
+  rawNumber?: string;
+  files: string[];
+}
+export interface GeneratePagesOptions {
+  loadGuide?: (
+    format: string,
+    file: string,
+  ) => Promise<IGuideConfig | undefined>;
+  onGuide?: (guide: IGuide, sources: GuideCardSource[]) => void;
+  onMissingGuide?: (format: string, file: string) => void;
+  strict?: boolean;
+}
+
+export const generatePages = async (
+  pageConfig: TPageConfig,
+  options: GeneratePagesOptions = {},
+) => {
   const _guideConfigsMemo: Record<string, IGuideConfig> = {};
+  const _sources = new WeakMap<ICard, Omit<GuideCardSource, "card">>();
 
   const _start = async (pageConfig: TPageConfig) => {
     const pages = await _parsePageConfig(pageConfig);
@@ -112,6 +131,8 @@ export const generatePages = async (pageConfig: TPageConfig) => {
               const guideData = await _parseGuideConfig(
                 formatCode,
                 pageConfig.guide,
+                [],
+                true,
               );
               template.guide = guideData?.guide;
               template.filter = guideData?.filter;
@@ -203,10 +224,12 @@ export const generatePages = async (pageConfig: TPageConfig) => {
     }
     let guideConfig: IGuideConfig | undefined;
     try {
-      guideConfig = (
-        await import(`@/content/guides/${formatCode}/${guideFile}.json`)
-      )?.default;
+      guideConfig = options.loadGuide
+        ? await options.loadGuide(formatCode, guideFile)
+        : (await import(`@/content/guides/${formatCode}/${guideFile}.json`))
+            ?.default;
     } catch (e: unknown) {
+      if (options.strict) throw e;
       if (formatCode === guideFile) {
         console.error(e);
       }
@@ -219,13 +242,24 @@ export const generatePages = async (pageConfig: TPageConfig) => {
   const _parseGuideConfig = async (
     formatCode: string,
     guideKey: string,
+    ancestors: string[] = [],
+    required = false,
   ): Promise<{ guide: IGuide; filter: IFilter } | undefined> => {
     const guideFile =
       guideKey === "gallery" ? formatCode : `${formatCode}-${guideKey}`;
     const preset = PRESET[`guide-${guideKey}`];
+    if (ancestors.includes(guideFile))
+      throw new Error(
+        `Cyclic includeFormats: ${[...ancestors, guideFile].join(" -> ")}`,
+      );
 
     const guideConfig = await _loadGuideJson(formatCode, guideFile);
-    if (!guideConfig) return;
+    if (!guideConfig) {
+      if (options.strict && (guideKey === "gallery" || required))
+        throw new Error(`Missing configured guide: ${formatCode}/${guideFile}`);
+      options.onMissingGuide?.(formatCode, guideFile);
+      return;
+    }
 
     const guideConfigGallery =
       guideKey !== "gallery"
@@ -243,8 +277,10 @@ export const generatePages = async (pageConfig: TPageConfig) => {
       ...guideConfigGallery?.sets,
       ...guideConfig.sets,
     };
-    let cards = Object.keys(guideConfig.cards).map((cardName) =>
-      _mergeCards([
+    let cards = Object.keys(guideConfig.cards).map((cardName) => {
+      const own = guideConfig.cards[cardName];
+      const base = guideConfigGallery?.cards?.[cardName];
+      const card = _mergeCards([
         {
           code:
             guideConfig.cards[cardName]?.code ??
@@ -254,8 +290,20 @@ export const generatePages = async (pageConfig: TPageConfig) => {
         },
         _parseCardConfig(cardName, guideConfig.cards[cardName]),
         _parseCardConfig(cardName, guideConfigGallery?.cards[cardName]),
-      ]),
-    );
+      ]);
+      _sources.set(card, {
+        rawNumber: own?.number || base?.number,
+        files: [
+          ...new Set([
+            `src/content/guides/${formatCode}/${guideFile}.json`,
+            ...(guideConfigGallery
+              ? [`src/content/guides/${formatCode}/${formatCode}.json`]
+              : []),
+          ]),
+        ],
+      });
+      return card;
+    });
 
     const includeFormats =
       guideConfig.includeFormats ?? guideConfigGallery?.includeFormats;
@@ -267,15 +315,30 @@ export const generatePages = async (pageConfig: TPageConfig) => {
         } else {
           subGuideCode = subFormat.code;
         }
-        const subGuideData = await _parseGuideConfig(subGuideCode, guideKey);
+        const subGuideData = await _parseGuideConfig(subGuideCode, guideKey, [
+          ...ancestors,
+          guideFile,
+        ]);
         if (!subGuideData) continue;
 
         cards = cards.concat(
           subGuideData.guide.cards
-            .map((card) => ({
-              ...card,
-              set: subGuideCode,
-            }))
+            .map((card) => {
+              const included = { ...card, set: subGuideCode };
+              const source = _sources.get(card);
+              if (source)
+                _sources.set(included, {
+                  ...source,
+                  files: [
+                    ...source.files,
+                    `src/content/guides/${formatCode}/${guideFile}.json`,
+                    ...(guideConfigGallery
+                      ? [`src/content/guides/${formatCode}/${formatCode}.json`]
+                      : []),
+                  ],
+                });
+              return included;
+            })
             .filter((card) => {
               if (typeof subFormat === "object") {
                 if (!!subFormat.min && parseInt(card.number) < subFormat.min) {
@@ -308,17 +371,26 @@ export const generatePages = async (pageConfig: TPageConfig) => {
       },
     };
 
+    const guide: IGuide = {
+      key: guideKey,
+      code: formatCode,
+      formatName,
+      name,
+      description,
+      icon,
+      tags,
+      cards,
+    };
+    options.onGuide?.(
+      guide,
+      cards.map((card) => ({
+        card,
+        ..._sources.get(card),
+        files: _sources.get(card)?.files ?? [],
+      })),
+    );
     return {
-      guide: {
-        key: guideKey,
-        code: formatCode,
-        formatName,
-        name,
-        description,
-        icon,
-        tags,
-        cards,
-      },
+      guide,
       filter,
     };
   };

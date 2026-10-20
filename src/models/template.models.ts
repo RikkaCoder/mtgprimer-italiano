@@ -1,4 +1,5 @@
 import type { IFilter, IGuide, TPageConfigTemplate } from "@/models";
+import type { ItalianImageMap } from "./card-images.models";
 
 export interface ITemplateMenuPage {
   path: string;
@@ -14,6 +15,7 @@ export interface ITemplateMenu {
 }
 
 export interface ITemplate {
+  italianImages?: ItalianImageMap;
   path: string;
   type: TPageConfigTemplate;
   backgroundImage: string;

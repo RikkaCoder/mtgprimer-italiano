@@ -1,5 +1,6 @@
 import { TemplateRouter } from "@/components/template";
 import { getPage, getPaths } from "@/lib";
+import { withItalianImages } from "@/lib/guide-images.server";
 
 export const generateStaticParams = async () => {
   return await getPaths();
@@ -15,7 +16,7 @@ const InnerPage = async ({
     return <></>;
   }
 
-  return <TemplateRouter template={template} />;
+  return <TemplateRouter template={withItalianImages(template)} />;
 };
 
 export default InnerPage;

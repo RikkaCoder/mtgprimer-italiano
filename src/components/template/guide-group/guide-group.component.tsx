@@ -49,7 +49,7 @@ export const TemplateGuideGroup = (props: {
                 )}
               </span>
             </h3>
-            <CardGroups guide={guide} />
+            <CardGroups guide={guide} images={props.template.italianImages} />
           </div>
         ))}
         <FilterBar hideCategories={true} />

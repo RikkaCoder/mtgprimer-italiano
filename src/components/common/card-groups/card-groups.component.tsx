@@ -6,11 +6,16 @@ import type { IGuide } from "@/models";
 import { Card, CardText, Icon } from "@/components/common";
 
 import { useLocale } from "@/components/provider/LocaleProvider";
+import { cardImageKey } from "@/lib/card-image-key";
+import type { ItalianImageMap } from "@/models/card-images.models";
 
 import styles from "./card-groups.module.scss";
 import { useFilters, useGroups } from "@/components/provider/FiltersProvider";
 
-export const CardGroups = (props: { guide: IGuide }) => {
+export const CardGroups = (props: {
+  guide: IGuide;
+  images?: ItalianImageMap;
+}) => {
   const { t } = useLocale();
   const { filterSelections, filter } = useFilters();
   const { groups } = useGroups(props.guide.cards);
@@ -118,10 +123,22 @@ export const CardGroups = (props: { guide: IGuide }) => {
                             }}
                           >
                             {filterSelections.view === "text" ? (
-                              <CardText card={card} />
+                              <CardText
+                                card={card}
+                                italianImage={
+                                  props.images?.[
+                                    cardImageKey(card.code, card.number)
+                                  ]
+                                }
+                              />
                             ) : (
                               <Card
                                 card={card}
+                                italianImage={
+                                  props.images?.[
+                                    cardImageKey(card.code, card.number)
+                                  ]
+                                }
                                 stack={filterSelections.view === "stack"}
                               />
                             )}

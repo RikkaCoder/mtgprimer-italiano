@@ -1,0 +1,21 @@
+{
+  "object": "card",
+  "id": "5abc7a02-af87-4ccb-8f8c-1293d25dc9d3",
+  "set": "fra",
+  "collector_number": "49",
+  "lang": "it",
+  "name": "Bloodline Recollector // Ancestral Craving",
+  "layout": "prepare",
+  "image_status": "highres_scan",
+  "image_uris": {
+    "normal": "https://cards.scryfall.io/normal/front/5/a/5abc7a02-af87-4ccb-8f8c-1293d25dc9d3.jpg?1790682335"
+  },
+  "card_faces": [
+    {
+      "name": "Bloodline Recollector"
+    },
+    {
+      "name": "Ancestral Craving"
+    }
+  ]
+}

@@ -15,7 +15,10 @@ export const TemplateGuide = (props: { template: ITemplateGuide }) => {
         description={props.template.description}
       />
       <FiltersProvider filter={props.template.filter}>
-        <CardGroups guide={props.template.guide} />
+        <CardGroups
+          guide={props.template.guide}
+          images={props.template.italianImages}
+        />
         <FilterBar />
       </FiltersProvider>
     </>

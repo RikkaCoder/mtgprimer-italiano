@@ -6,15 +6,23 @@ import type { ICard } from "@/models";
 import { Icon } from "@/components/common";
 
 import { useLocale } from "@/components/provider/LocaleProvider";
+import { getCardImages } from "@/lib/card-images";
+import { useCardImage } from "@/hooks/useCardImage";
+import type { CompactItalianImage } from "@/models/card-images.models";
 
 import styles from "./card.module.scss";
 
-export const Card = (props: { card: ICard; stack: boolean }) => {
-  const { t } = useLocale();
+export const Card = (props: {
+  card: ICard;
+  stack: boolean;
+  italianImage?: CompactItalianImage;
+}) => {
+  const { t, locale } = useLocale();
   const [isTransformed, setIsTransformed] = useState(props.card.isTransformed);
 
-  const imageUrl = `https://s3-us-west-2.amazonaws.com/mtgprimer/cards/normal/${props.card.code}/${props.card.number}.jpg`;
-  const imageTransformedUrl = `https://s3-us-west-2.amazonaws.com/mtgprimer/cards/normal/${props.card.code}/${props.card.number}b.jpg`;
+  const images = getCardImages(props.card, locale, props.italianImage);
+  const front = useCardImage(images.front);
+  const back = useCardImage(images.back);
 
   const isTransformable = useMemo(
     () =>
@@ -30,19 +38,19 @@ export const Card = (props: { card: ICard; stack: boolean }) => {
       <div>
         <div
           style={{
-            backgroundImage: `url('${imageUrl}')`,
+            backgroundImage: `url('${front.url}')`,
           }}
         >
-          <img src={imageUrl} alt="" />
+          <img src={front.url} alt="" onError={front.onError} ref={front.ref} />
         </div>
         {isTransformable && (
           <div
             className={`transformFace${isTransformed ? " isTransformed" : ""}`}
             style={{
-              backgroundImage: `url('${imageTransformedUrl}')`,
+              backgroundImage: `url('${back.url}')`,
             }}
           >
-            <img src={imageTransformedUrl} alt="" />
+            <img src={back.url} alt="" onError={back.onError} ref={back.ref} />
           </div>
         )}
         <button

@@ -12,7 +12,10 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "images:italian": "tsx scripts/generate-italian-card-images.ts",
+    "data:upstream": "tsx scripts/sync-upstream-data.ts",
+    "test:images": "tsx --test tests/card-images.test.ts tests/image-automation.test.ts tests/upstream-data.test.ts"
   },
   "dependencies": {
     "@next/third-parties": "^15.4.2",
